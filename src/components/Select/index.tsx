@@ -21,7 +21,6 @@ const Select: React.FC<SelectProps> = ({ options, value, onChange }) => {
   };
 
   useEffect(() => {
-    //点击其他地方关闭下拉框
     const close = (e: any) => {
       if (e.target.className !== "selected") {
         setOpen(false);

@@ -55,7 +55,6 @@ const Pagination: React.FC<PaginationProps> = ({
   ];
 
   return (
-    //调整 支持总条数，每页条数，当前页数，所有页的点击
     <div className="pagination">
       <button onClick={handlePrev} disabled={current === 1}>
         上一页
