@@ -1,0 +1,53 @@
+.thead {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #f0f0f0; /* 浅灰色背景 */
+    font-weight: bold; /* 字体加粗 */
+    padding: 10px 0; /* 增加上下边距 */
+    border-bottom: 2px solid #ddd; /* 底部边框 */
+}
+
+.thead .th {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* 单元格内的间距 */
+    justify-content: center;
+}
+
+.tbody {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* 仅在必要时显示滚动条 */
+}
+
+.tbody .tr {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee; /* 行之间的边框 */
+    transition: background-color 0.3s; /* 平滑背景色变化效果 */
+}
+
+.tbody .tr:hover {
+    background-color: #f9f9f9; /* 鼠标悬停的背景色 */
+}
+
+.tbody .tr .td {
+    text-align: center;
+    padding: 8px; /* 单元格内边距 */
+    flex-grow: 1; /* 使单元格平均分配空间 */
+}
+
+/* 滚动条样式（仅适用于Webkit浏览器） */
+.tbody::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tbody::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 4px;
+}
+
+.tbody::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}

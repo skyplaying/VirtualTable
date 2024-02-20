@@ -1,0 +1,62 @@
+
+/* 下拉选择组件样式  select   selected   options  option */
+
+.select {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+}
+
+.select.selected {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.select .options {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+  transform: translateY(-10px);
+  color: #333;
+}
+
+.select.selected .options {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.select .option {
+  padding: 0 15px;
+  height: 40px;
+  line-height: 40px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.select .option:hover {
+  background-color: #f5f5f5;
+}
+
+.select .option.active {
+  background-color: #e6f7ff;
+}
+
