@@ -1,4 +1,3 @@
-//写一个分页组件
 import React, { useState } from "react";
 import Select from "../Select";
 import "./index.css";

@@ -44,7 +44,7 @@ const VirtualTable = (props: VirtualTableProps) => {
     if (isVirtual) {
       setVisibleData(data.slice(startIndex, endIndex));
     }
-  }, [scrollTop, data, startIndex, endIndex]);
+  }, [scrollTop, data, startIndex, endIndex, isVirtual]);
 
   //切换页码
   useEffect(() => {
@@ -60,7 +60,7 @@ const VirtualTable = (props: VirtualTableProps) => {
     if (tbodyRef.current) {
       tbodyRef.current.scrollTop = 0;
     }
-  }, [currentPage, currentPageSize, data]);
+  }, [currentPage, currentPageSize, data, isVirtual]);
 
   return (
     <>
