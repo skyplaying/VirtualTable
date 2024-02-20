@@ -3,7 +3,6 @@ import { faker } from "@faker-js/faker";
 import Table from "./index";
 import { column } from "./interface";
 
-// 定义列的信息
 const columns: column[] = [
   {
     key: "id",

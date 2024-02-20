@@ -1,12 +1,9 @@
-import './App.css';
-// import DataGridTest from './components/DataGrid/test';
-import TableTest from './components/Table/performanceTest';
-
+import "./App.css";
+import TableTest from "./components/Table/performanceTest";
 
 function App() {
   return (
     <div className="App">
-      {/* <DataGridTest /> */}
       <TableTest />
     </div>
   );
